@@ -8,6 +8,12 @@ def chunk(lis, size):
 
 class chunkTest(unittest.TestCase):
 	def test(self):
+		self.assertEqual(type(chunk(["a", "b", "c", "d"], 2)), list)
+		self.assertEqual(chunk(["a", "b", "c", "d"], 2), [["a", "b"], ["c", "d"]])
+		self.assertEqual(chunk([0, 1, 2, 3, 4, 5], 3), [[0, 1, 2], [3, 4, 5]])
+		self.assertEqual(chunk([0, 1, 2, 3, 4, 5], 2), [[0, 1], [2, 3], [4, 5]])
+		self.assertEqual(chunk([0, 1, 2, 3, 4, 5], 4), [[0, 1, 2, 3], [4, 5]])
+
 
 if __name__ == '__main__':
 	unittest.main()

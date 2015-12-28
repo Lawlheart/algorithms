@@ -9,6 +9,11 @@ def slasher(lis, num):
 
 class slasherTest(unittest.TestCase):
 	def test(self):
+		self.assertEqual(type(slasher([1, 2, 3], 2)), list)
+		self.assertEqual(slasher([1, 2, 3], 2), [3])
+		self.assertEqual(slasher([1, 2, 3], 0), [1, 2, 3])
+		self.assertEqual(slasher([1, 2, 3], 9), [])
+		self.assertEqual(slasher([1, 2, 3], 4), [])
 
 if __name__ == '__main__':
 	unittest.main()

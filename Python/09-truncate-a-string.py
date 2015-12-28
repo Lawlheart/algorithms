@@ -10,6 +10,13 @@ def truncate(string, num):
 
 class truncateTest(unittest.TestCase):
 	def test(self):
+		self.assertEqual(type(truncate("A-tisket a-tasket A green and yellow basket", 11)), str)
+		self.assertEqual(truncate("A-tisket a-tasket A green and yellow basket", 11), "A-tisket...")
+		self.assertEqual(truncate("Peter Piper picked a peck of pickled peppers", 14), "Peter Piper...")
+		self.assertEqual(truncate("A-tisket a-tasket A green and yellow basket", len("A-tisket a-tasket A green and yellow basket")), "A-tisket a-tasket A green and yellow basket")
+		self.assertEqual(truncate("A-tisket a-tasket A green and yellow basket", len("A-tisket a-tasket A green and yellow basket") + 2), "A-tisket a-tasket A green and yellow basket")
+		self.assertEqual(truncate("A-", 1), "A...")
+		self.assertEqual(truncate("Absolutely Longer", 2), "Ab...")
 
 if __name__ == '__main__':
 	unittest.main()

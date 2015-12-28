@@ -8,6 +8,13 @@ def repeat(string, num):
 
 class repeatTest(unittest.TestCase):
 	def test(self):
+		self.assertEqual(type(repeat("*", 3)), str)
+		self.assertEqual(repeat("*", 3), "***")
+		self.assertEqual(repeat("abc", 3), "abcabcabc")
+		self.assertEqual(repeat("abc", 4), "abcabcabcabc")
+		self.assertEqual(repeat("abc", 1), "abc")
+		self.assertEqual(repeat("*", 8), "********")
+		self.assertEqual(repeat("abc", -2), "")
 
 if __name__ == '__main__':
 	unittest.main()
