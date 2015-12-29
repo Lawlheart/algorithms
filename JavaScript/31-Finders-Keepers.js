@@ -5,11 +5,8 @@
 // if no elements pass, return undefined
 
 function find(arr, func) {
-  for(var i=0;i<arr.length;i++) {
-    if(func(arr[i])) {
-      return arr[i]
-    }
-  }
+  var num = 0;
+  return num;
 }
 
 find([1, 2, 3, 4], function(num){ return num % 2 === 0; });

@@ -4,17 +4,12 @@
 // Compare two arrays and return a new array with any items only found in one of the original arrays.
 
 function diff(arr1, arr2) {
-  arr = arr1.concat(arr2).filter(function(value) {
-    if(arr1.indexOf(value) < 0 || arr2.indexOf(value) < 0 ) {
-      return true;
-    }
-  });
-  
-  return arr;
+  var newArr = [];
+  // Same, same; but different.
+  return newArr;
 }
 
 diff([1, 2, 3, 5], [1, 2, 3, 4, 5]);
-
 // TESTING
 // diff([1, 2, 3, 5], [1, 2, 3, 4, 5]) should return an array.
 // ["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"] should return ["pink wool"].

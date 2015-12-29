@@ -6,26 +6,10 @@
 // The provided number may not be a prime.
 
 function sumPrimes(num) {
-  var primes = [];
-  for(var i=2;i<=num;i++) {
-    var prime = true;
-    for(var j=2;j<i;j++) {
-      if(i%j === 0) {
-        prime = false;
-      }
-    }
-    if(prime) {
-      primes.push(i);
-    }
-  }
-  var sum = 0;
-  for(var k=0;k<primes.length;k++) {
-  	sum += primes[k];
-  }
-  return sum;
+  return num;
 }
 
-sumPrimes(100);
+sumPrimes(10);
 
 // TESTING
 // sumPrimes(10) should return a number.

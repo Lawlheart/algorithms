@@ -8,10 +8,7 @@
 // NOTE: Preserve the case of the original word when you are replacing it. For example if you mean to replace the word "Book" with the word "dog", it should be replaced as "Dog"
 
 function replace(str, before, after) {
-  if(before[0] === before[0].toUpperCase()) {
-    after = after[0].toUpperCase() + after.slice(1);
-  }
-  return str.replace(before, after);
+  return str;
 }
 
 replace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");

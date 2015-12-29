@@ -7,14 +7,10 @@
 
 function truncate(str, num) {
   // Clear out that junk in your trunk
-  if(str.length<=num) {
-    return str
-  }
-  var trun = str.slice(0,num-3) + "..."
-  return trun;
+  return str;
 }
 
-truncate('A-tisket a-tasket A green and yellow basket', 11);
+truncate("A-tisket a-tasket A green and yellow basket", 11);
 
 // TESTING
 // truncate("A-tisket a-tasket A green and yellow basket", 11) should return "A-tisket...".

@@ -5,16 +5,10 @@
 
 function repeat(str, num) {
   // repeat after me
-  var response = "";
-  if(num>0) {
-    for(var i=0;i<num;i++) {
-      response += str
-    }
-  }
-  return response;
+  return str;
 }
 
-repeat('abc', 3);
+repeat("abc", 3);
 
 // TESTING
 // repeat("*", 3) should return "***".

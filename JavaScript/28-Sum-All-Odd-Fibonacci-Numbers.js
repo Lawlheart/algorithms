@@ -6,20 +6,10 @@
 // As an example, passing 4 to the function will return 5 because all the odd Fibonacci numbers under 4 are 1, 1, and 3.
 
 function sumFibs(num) {
-	var fibs = [1,1];
-	var sum = 0;
-	while(fibs[fibs.length-1] + fibs[fibs.length-2] <= num) {
-		fibs.push(fibs[fibs.length-1] + fibs[fibs.length-2])
-	}
-	for(var i=0;i<fibs.length;i++) {
-		if(fibs[i]%2 === 1) {
-			sum += fibs[i];
-		}
-	}
-	return sum
+  return num;
 }
 
-sumFibs(100);
+sumFibs(4);
 
 // TESTING
 // sumFibs(1) should return a number.

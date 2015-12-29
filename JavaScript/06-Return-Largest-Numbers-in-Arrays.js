@@ -5,17 +5,6 @@
 
 function largestOfFour(arr) {
   // You can do this!
-  var newArray = []
-  for(var i=0;i<arr.length;i++) {
-    var largest = 0;
-    for(var j=0;j<arr[i].length;j++) {
-      if(arr[i][j] > largest) {
-        largest = arr[i][j];
-      }
-    }
-    newArray.push(largest);
-  }
-  arr = newArray
   return arr;
 }
 

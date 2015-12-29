@@ -6,15 +6,7 @@
 // The unique numbers should be sorted by their original order, but the final array should not be sorted in numerical order.
 
 function unite(arr1, arr2, arr3) {
-  var newArr = [];
-  for(var i=0;i<arguments.length;i++) {
-    for(var j=0;j<arguments[i].length;j++) {
-      if(newArr.indexOf(arguments[i][j]) < 0) {
-        newArr.push(arguments[i][j])
-      }
-    }
-  }
-  return newArr;
+  return arr1;
 }
 
 unite([1, 3, 2], [5, 2, 1, 4], [2, 1]);

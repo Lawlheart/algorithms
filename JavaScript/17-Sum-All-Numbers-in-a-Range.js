@@ -5,12 +5,7 @@
 // The lowest number will not always come first.
 
 function sumAll(arr) {
-  var sum = 0;
-  arr = arr.sort(function(a, b){return a-b});
-  for(var i=arr[0];i<=arr[1];i++) {
-    sum += i;
-  }
-  return sum
+  return 1;
 }
 
 sumAll([1, 4]);
