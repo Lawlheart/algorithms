@@ -10,17 +10,33 @@ class Person:
 	def __init__(self, firstAndLast):
 		self.firstAndLast = firstAndLast
 	def getFirstName(self):
-		return firstAndLast
+		return self.firstAndLast
 	def getLastName(self):
-		return firstAndLast
+		return self.firstAndLast
 	def getFullName(self):
-		return firstAndLast
+		return self.firstAndLast
 
 bob = Person("Bob Ross")
 
-class Test(unittest.TestCase):
+class PersonTest(unittest.TestCase):
 	def test(self):
 		self.assertEqual(True, True)
+		with self.assertRaises(AttributeError):
+			bob.firstName
+			bob.lastName
+		self.assertEqual(bob.getFirstName(), "Bob")
+		self.assertEqual(bob.getLastName(), "Ross")
+		self.assertEqual(bob.getFullName(), "Bob Ross")
+		bob.setFirstName("Haskell")
+		self.assertEqual(bob.getFullName(), "Haskell Ross")
+		bob.setLastName("Curry")
+		self.assertEqual(bob.getFullName(), "Haskell Curry")
+		bob.setFullName("Haskell Curry")
+		self.assertEqual(bob.getFullName(), "Haskell Curry")
+		bob.setFullName("Haskell Curry")
+		self.assertEqual(bob.getFirstName(), "Haskell")
+		bob.setFullName("Haskell Curry")
+		self.assertEqual(bob.getLastName(), "Curry")
 
 if __name__ == '__main__':
 	unittest.main()
