@@ -4,7 +4,14 @@ import unittest
 # Return an array consisting of the largest number from each provided sub-array. For simplicity, the provided array will contain exactly 4 sub-arrays.
 
 def largestOfFour(lis):
-	return lis
+	sol = []
+	for four in lis:
+		large = 0
+		for num in four:
+			if num > large:
+				large = num
+		sol.append(large)
+	return sol
 
 
 class largestOfFourTest(unittest.TestCase):

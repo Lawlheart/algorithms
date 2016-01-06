@@ -6,7 +6,7 @@ import unittest
 # Your result must be a string.
 
 def reverseString(string):
-	return string
+	return "".join(list(string)[::-1])
 
 reverseString("Hello")
 

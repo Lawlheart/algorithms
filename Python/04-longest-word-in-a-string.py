@@ -5,7 +5,11 @@ import unittest
 # Your response should be a number.
 
 def longestWord(string):
-	return string
+	sol = 0
+	for letter in string.split():
+		if len(letter) > sol:
+			sol = len(letter)
+	return sol
 
 longestWord("The quick brown fox jumped over the lazy dog")
 

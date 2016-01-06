@@ -4,7 +4,7 @@ import unittest
 # Check if a string (first argument) ends with the given target string (second argument).
 
 def end(string, target):
-	return string
+	return string[- len(target):] == target
 
 class endTest(unittest.TestCase):
 	def test(self):

@@ -6,7 +6,12 @@ import unittest
 # You'll need to remove all non-alphanumeric characters (punctuation, spaces and symbols) and turn everything lower case in order to check for palindromes.
 
 def palindrome(string):
-	return string
+	alphanum = list('abcdefghijklmnopqrstuvwxyz0123456789')
+	lis = []
+	for char in list(string.lower()):
+		if char in alphanum:
+			lis.append(char)
+	return lis == lis[::-1]
 
 class palindromeTest(unittest.TestCase):
 	def test(self):

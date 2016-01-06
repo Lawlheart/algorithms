@@ -4,7 +4,14 @@ import unittest
 # Write a function that splits an array (first argument) into groups the length of size (second argument) and returns them as a multidimensional array.
 
 def chunk(lis, size):
-	return lis
+	sol = []
+	chunk = []
+	for index in range(0, len(lis)):
+		chunk.append(lis[index])
+		if len(chunk) == size or index == len(lis) - 1:
+			sol.append(chunk)
+			chunk = []
+	return sol
 
 class chunkTest(unittest.TestCase):
 	def test(self):

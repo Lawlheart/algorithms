@@ -5,7 +5,10 @@ import unittest
 # If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n.
 
 def factorialize(num):
-	return num
+	sol = 1
+	for i in range(1,num+1):
+		sol *= i
+	return sol
 
 factorialize(5)
 

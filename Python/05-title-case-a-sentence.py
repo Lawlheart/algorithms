@@ -5,7 +5,10 @@ import unittest
 # For the purpose of this exercise, you should also capitalize connecting words like "the" and "of".
 
 def titleCase(string):
-	return string
+	sol = []
+	for word in string.split():
+		sol.append(word.capitalize())
+	return " ".join(sol)
 
 class titleCaseTest(unittest.TestCase):
 	def test(self):
