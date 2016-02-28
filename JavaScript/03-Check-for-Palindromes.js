@@ -6,15 +6,8 @@
 // You'll need to remove all non-alphanumeric characters (punctuation, spaces and symbols) and turn everything lower case in order to check for palindromes.
 
 function palindrome(str) {
-  // Good luck!
-  str = str.toLowerCase().replace(/[^a-z]/g,"")
-  var rts = str.split("").reverse().join("");
-  console.log(str, rts)
-  if(str=== rts) {
-    return true;
-  } else {
-    return false;
-  }
+  var s = str.toLowerCase().replace(/[^a-z0-9]/g,"");
+  return s === s.split("").reverse().join("");
 }
 
 
