@@ -5,15 +5,13 @@
 // The lowest number will not always come first.
 
 function sumAll(arr) {
-  var sum = 0;
-  arr = arr.sort(function(a, b){return a-b});
-  for(var i=arr[0];i<=arr[1];i++) {
-    sum += i;
-  }
-  return sum
+  var r = arr.sort(function(a, b) { return a - b; });
+  return Array(r[1] - r[0] + 1).fill(r[0]).reduce(function(a, b, i) {
+    return a + b + i;
+  });
 }
 
-sumAll([1, 4]);
+sumAll([5, 10]);
 
 // TESTING
 // sumAll([1, 4]) should return a number.

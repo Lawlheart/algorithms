@@ -4,20 +4,11 @@
 // Write a function that splits an array (first argument) into groups the length of size (second argument) and returns them as a multidimensional array.
 
 function chunk(arr, size) {
-  // Break it up.
-  var newArray = [];
-  for(var i=0;i<arr.length;i+=size) {
-    var subArray = [];
-    for(var j=0;j<size;j++) {
-      if(arr[i+j] !== undefined) {
-        subArray.push(arr[i+j])
-      }
-    }
-    newArray.push(subArray)
-  }
-  arr = newArray
-  console.log(arr)
-  return arr;
+  return arr.filter(function(c, i) {
+    return i % size === 0;
+  }).map(function(c, i) {
+    return arr.slice(i * size, (i * size) + size);
+  });
 }
 
 chunk(['a', 'b', 'c', 'd'], 2);

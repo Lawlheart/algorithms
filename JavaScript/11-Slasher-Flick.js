@@ -5,9 +5,7 @@
 // The head meaning the beginning of the array, or the zeroth index
 
 function slasher(arr, howMany) {
-  // it doesn't always pay to be first
-  arr = arr.slice(howMany)
-  return arr;
+  return arr.slice(howMany);
 }
 
 slasher([1, 2, 3], 2);

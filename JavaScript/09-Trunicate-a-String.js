@@ -6,12 +6,8 @@
 // If the num is less than or equal to 3, then the length of the three dots is not added to the string length.
 
 function truncate(str, num) {
-  // Clear out that junk in your trunk
-  if(str.length<=num) {
-    return str
-  }
-  var trun = str.slice(0,num-3) + "..."
-  return trun;
+  var cut = num <= 3 ? num : num - 3;
+  return str.length > num ? str.slice(0, cut) + '...' : str;
 }
 
 truncate('A-tisket a-tasket A green and yellow basket', 11);

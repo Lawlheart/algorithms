@@ -6,15 +6,11 @@
 // Likewise, where([20,3,5], 19) should return 2 because once the list has been sorted it will look like [3,5,20] and 19 is less than 20 (index 2) and greater than 5 (index 1).
 
 function where(arr, num) {
-  // Find my place in this sorted array.
-  var index = 0;
-  for(var i=0; i<arr.length; i++) {
-    if(num>arr[i]) {
-      index += 1
-    } 
-  }
-  return index
+  return arr.slice().sort().filter(function(item) {
+    return item < num;
+  }).length;
 }
+
 where([40, 60], 50);
 
 // TESTING

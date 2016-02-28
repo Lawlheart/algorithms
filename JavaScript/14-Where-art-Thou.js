@@ -5,25 +5,17 @@
 // For example, if the 'first' argument is [{ 'first': "Romeo", 'last': "Montague" }, { 'first': "Mercutio", 'last': None }, { 'first': "Tybalt", 'last': "Capulet" }], and the second argument is { 'last': "Capulet" }, then you must return the third object from the array (the 'first' argument), because it contains the property and it's value, that was passed on as the second argument.
 
 function where(collection, source) {
-  var arr = [];
-  // What's in a name?
-  for(var i=0;i<collection.length;i++) {
-    var match = true;
-    for(key in source) {
-      console.log(!collection[i].hasOwnProperty(key), source[key] !== collection[i][key])
-      if(!collection[i].hasOwnProperty(key) || source[key] !== collection[i][key]) {
-         match = false;
+  return collection.filter(function(contact) {
+    for(var key in source) {
+      if(!contact.hasOwnProperty(key) || contact[key] !== source[key]) {
+        return false;
       }
     }
-    if(match) {
-      arr.push(collection[i])
-    }
-  }
-  console.log(arr)
-  return arr;
+    return true;
+  });
 }
 
-where([{ 'a': 1, 'b': 2 }, { 'a': 1 }, { 'a': 1, 'b': 2, 'c': 2 }], { 'a': 1, 'b': 2 });
+where([{ first: 'Romeo', last: 'Montague' }, { first: 'Mercutio', last: null }, { first: 'Tybalt', last: 'Capulet' }], { last: 'Capulet' });
 
 // TESTING
 // where([{ 'first': "Romeo", 'last': "Montague" }, { 'first': "Mercutio", 'last': None }, { 'first': "Tybalt", 'last': "Capulet" }], { 'last': "Capulet" }) should return [{ 'first': "Tybalt", 'last': "Capulet" }].

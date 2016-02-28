@@ -8,18 +8,12 @@
 
 function mutation(arr) {
   var str = arr[0].toLowerCase();
-  var letters = arr[1].toLowerCase().split("");
-  
-  for(var i=0;i<letters.length;i++) {
-    if(str.indexOf(letters[i])<0) {
-      return false
-    }
-  }
-  
-  return true;
+  return arr[1].toLowerCase().split("").reduce(function(a, b) {
+    return (a === true || str.indexOf(a) >= 0) && str.indexOf(b) >= 0;
+  });
 }
 
-mutation(['hello', 'hey']);
+mutation(['hello', 'he']);
 
 // TESTING
 // mutation(["hello", "hey"]) should return false.

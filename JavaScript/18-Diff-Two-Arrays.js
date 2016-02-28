@@ -4,13 +4,9 @@
 // Compare two arrays and return a new array with any items only found in one of the original arrays.
 
 function diff(arr1, arr2) {
-  arr = arr1.concat(arr2).filter(function(value) {
-    if(arr1.indexOf(value) < 0 || arr2.indexOf(value) < 0 ) {
-      return true;
-    }
+  return arr1.concat(arr2).filter(function(value) {
+    return (arr1.indexOf(value) < 0 || arr2.indexOf(value) < 0 );
   });
-  
-  return arr;
 }
 
 diff([1, 2, 3, 5], [1, 2, 3, 4, 5]);
