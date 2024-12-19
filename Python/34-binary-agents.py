@@ -5,7 +5,7 @@ import unittest
 # The binary string will be space separated.
 
 def binaryAgent(string):
-	return string
+	pass
 
 class binaryAgentTest(unittest.TestCase):
 	def test(self):

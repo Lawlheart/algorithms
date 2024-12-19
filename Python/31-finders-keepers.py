@@ -5,8 +5,7 @@ import unittest
 # if no elements pass, return None
 
 def find(lis, filt):
-	num = 0
-	return num
+	pass
 
 
 class findTest(unittest.TestCase):

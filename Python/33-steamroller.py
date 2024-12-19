@@ -4,7 +4,7 @@ import unittest
 # Flatten a nested list. You must account for varying levels of nesting.
 
 def steamroller(lis):
-	return lis
+	pass
 
 class steamrollerTest(unittest.TestCase):
 	def test(self):

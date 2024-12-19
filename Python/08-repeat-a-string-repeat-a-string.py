@@ -4,10 +4,7 @@ import unittest
 # Repeat a given string (first argument) n times (second argument). Return an empty string if n is a negative number.
 
 def repeat(string, num):
-	if num < 0:
-		return ""
-	else:
-		return string * num
+	pass
 
 class repeatTest(unittest.TestCase):
 	def test(self):

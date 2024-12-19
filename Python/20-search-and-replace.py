@@ -8,7 +8,7 @@ import unittest
 # NOTE: Preserve the case of the original word when you are replacing it. For example if you mean to replace the word "Book" with the word "dog", it should be replaced as "Dog"
 
 def replace(string, before, after):
-	return string
+	pass
 
 class replaceTest(unittest.TestCase):
 	def test(self):

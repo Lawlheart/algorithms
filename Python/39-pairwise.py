@@ -6,7 +6,7 @@ import unittest
 # pairwise([1, 3, 2, 4], 4) would only equal 1, because only the first two elements can be paired to equal 4, and the first element has an index of 0!
 
 def pairwise(lis, num):
-	return num
+  pass
 
 class pairwiseTest(unittest.TestCase):
 	def test(self):

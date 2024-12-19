@@ -6,7 +6,7 @@ import unittest
 # The unique numbers should be sorted by their original order, but the final array should not be sorted in numerical order.
 
 def unite(lis1, lis2, lis3):
-	return lis1
+	pass
 
 class uniteTest(unittest.TestCase):
 	def test(self):

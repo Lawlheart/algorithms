@@ -4,7 +4,7 @@ import unittest
 # You will be provided with an initial list (the first argument in the destroyer function), followed by one or more arguments. Remove all elements from the initial list that are of the same value as these arguments.
 
 def destroyer(lis, tar1, tar2):
-	return lis
+	pass
 
 class destroyerTest(unittest.TestCase):
 	def test(self):

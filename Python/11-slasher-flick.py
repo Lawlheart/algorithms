@@ -5,7 +5,7 @@ import unittest
 # The head meaning the beginning of the array, or the zeroth index
 
 def slasher(lis, num):
-	return lis
+	pass
 
 class slasherTest(unittest.TestCase):
 	def test(self):

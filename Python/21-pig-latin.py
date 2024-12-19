@@ -6,7 +6,7 @@ import unittest
 # If a word begins with a vowel you just add "way" to the end.
 
 def translate(string):
-	return string
+	pass
 
 class translateTest(unittest.TestCase):
 	def test(self):

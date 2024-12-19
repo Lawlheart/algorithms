@@ -5,7 +5,7 @@ import unittest
 # The mathematical term symmetric difference refers to the elements in two sets that are in either the first or second set, but not in both.
 
 def sym(arg1, arg2):
-	return arg1
+  pass
 
 class symTest(unittest.TestCase):
 	def test(self):

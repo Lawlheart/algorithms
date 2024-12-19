@@ -7,8 +7,7 @@ import unittest
 # Otherwise, return change in coin and bills, sorted in highest to lowest order.
 
 def drawer(price, cash, cid):
-	change = []
-	return change
+  pass
 
 class drawerTest(unittest.TestCase):
 	def test(self):

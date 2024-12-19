@@ -7,7 +7,7 @@ import unittest
 # Lastly, ["Alien", "line"], should return true because all of the letters in "line" are present in "Alien".
 
 def mutation(lis):
-	return True
+	pass
 
 class mutationTest(unittest.TestCase):
 	def test(self):

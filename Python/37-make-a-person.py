@@ -8,13 +8,13 @@ import unittest
 
 class Person:
 	def __init__(self, firstAndLast):
-		self.firstAndLast = firstAndLast
+		pass
 	def getFirstName(self):
-		return self.firstAndLast
+		pass
 	def getLastName(self):
-		return self.firstAndLast
+		pass
 	def getFullName(self):
-		return self.firstAndLast
+		pass
 
 bob = Person("Bob Ross")
 

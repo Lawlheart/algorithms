@@ -6,7 +6,7 @@ import unittest
 # The provided number may not be a prime.
 
 def sumPrimes(num):
-	return num
+	pass
 
 class sumPrimesTest(unittest.TestCase):
 	def test(self):

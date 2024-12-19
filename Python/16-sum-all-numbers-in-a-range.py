@@ -5,7 +5,7 @@ import unittest
 # The lowest number will not always come first.
 
 def sumAll(lis):
-	return 5
+	pass
 
 class sumAllTest(unittest.TestCase):
 	def test(self):

@@ -4,7 +4,7 @@ import unittest
 # Remove all falsy values from an array.
 
 def bouncer(lis):
-	return lis
+	pass
 
 class bouncerTest(unittest.TestCase):
 	def test(self):

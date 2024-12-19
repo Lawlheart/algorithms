@@ -5,13 +5,10 @@ import unittest
 # Your response should be a number.
 
 def longestWord(string):
-	sol = 0
-	for letter in string.split():
-		if len(letter) > sol:
-			sol = len(letter)
-	return sol
+	sorted_words = sorted(string.split(' '), key=lambda word: len(word))
+	return len(''.join(sorted_words[-1:]))
 
-longestWord("The quick brown fox jumped over the lazy dog")
+print(longestWord("The quick brown fox jumped over the lazy dog"))
 
 
 class longestWordTest(unittest.TestCase):

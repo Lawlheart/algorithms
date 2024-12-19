@@ -4,7 +4,7 @@ import unittest
 # Convert the characters "&", "<", ">", '"' (double quote), and "'" (apostrophe), in a string to their corresponding HTML entities.
 
 def convert(string):
-	return string
+	pass
 
 class convertTest(unittest.TestCase):
 	def test(self):

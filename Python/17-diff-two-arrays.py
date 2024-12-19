@@ -4,7 +4,7 @@ import unittest
 # Compare two arrays and return a new array with any items only found in one of the original arrays.
 
 def diff(lis1, lis2):
-	return lis1
+	pass
 
 class diffTest(unittest.TestCase):
 	def test(self):

@@ -5,7 +5,7 @@ import unittest
 # Boolean primitives are true and false.
 
 def boo(boolean):
-	return True
+	pass
 
 class booTest(unittest.TestCase):
 	def test(self):

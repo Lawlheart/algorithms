@@ -5,7 +5,7 @@ import unittest
 # Return the rest of the array, otherwise return an empty array.
 
 def drop(lis, filt):
-	return lis
+	pass
 
 class dropTest(unittest.TestCase):
 	def test(self):

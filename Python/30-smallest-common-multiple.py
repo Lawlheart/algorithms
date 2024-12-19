@@ -5,7 +5,7 @@ import unittest
 # The range will be an array of two numbers that will not necessarily be in numerical order.
 
 def smallestCommons(lis):
-	return lis[0]
+	pass
 
 class smallestCommonsTest(unittest.TestCase):
 	def test(self):

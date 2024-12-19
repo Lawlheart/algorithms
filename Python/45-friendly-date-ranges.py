@@ -8,7 +8,7 @@ import unittest
 # Input date is formatted as YYYY-MM-DD
 
 def friendly(lis):
-	return lis
+	pass
 
 class friendlyTest(unittest.TestCase):
 	def test(self):

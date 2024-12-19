@@ -4,7 +4,7 @@ import unittest
 # Check if the predicate (second argument) is truthy on all elements of a collection (first argument).
 
 def every(collection, prop):
-	return True
+	pass
 
 class everyTest(unittest.TestCase):
 	def test(self):

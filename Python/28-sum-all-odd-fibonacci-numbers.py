@@ -6,7 +6,7 @@ import unittest
 # As an example, passing 4 to the function will return 5 because all the odd Fibonacci numbers under 4 are 1, 1, and 3.
 
 def sumFibs(num):
-	return num
+	pass
 
 class sumFibsTest(unittest.TestCase):
 	def test(self):

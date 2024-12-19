@@ -9,7 +9,7 @@ import unittest
 # If either argument isn't a valid number, return None.
 
 def add(num1, num2):
-	return num1
+	pass
 
 class addTest(unittest.TestCase):
 	def test(self):

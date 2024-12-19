@@ -8,7 +8,7 @@ import unittest
 # The radius of the earth is 6367.4447 kilometers, and the GM value of earth is 398600.4418
 
 def orbitalPeriod(lis):
-	return lis
+  pass
 
 class orbitalPeriodTest(unittest.TestCase):
 	def test(self):

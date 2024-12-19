@@ -5,7 +5,7 @@ import unittest
 # For example, if the 'first' argument is [{ 'first': "Romeo", 'last': "Montague" }, { 'first': "Mercutio", 'last': None }, { 'first': "Tybalt", 'last': "Capulet" }], and the second argument is { 'last': "Capulet" }, then you must return the third object from the array (the 'first' argument), because it contains the property and it's value, that was passed on as the second argument.
 
 def where(collection, source):
-	return collection
+	pass
 
 class whereTest(unittest.TestCase):
 	def test(self):

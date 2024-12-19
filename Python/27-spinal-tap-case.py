@@ -4,7 +4,7 @@ import unittest
 # Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.
 
 def spinalCase(string):
-	return string
+	pass
 
 class spinalCaseTest(unittest.TestCase):
 	def test(self):

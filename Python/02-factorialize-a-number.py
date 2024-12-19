@@ -1,16 +1,14 @@
 import unittest
+import math
 
 # FACTORIALIZE A NUMBER
 # Return the factorial of the provided integer.
 # If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n.
 
 def factorialize(num):
-	sol = 1
-	for i in range(1,num+1):
-		sol *= i
-	return sol
+	return math.factorial(num)
 
-factorialize(5)
+print(factorialize(5))
 
 class factorializeTest(unittest.TestCase):
 	def test(self):

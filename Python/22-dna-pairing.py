@@ -8,7 +8,7 @@ import unittest
 # The character and its pair are paired up in an array, and all the arrays are grouped into one encapsulating array.
 
 def pair(string):
-	return string
+	pass
 
 class pairTest(unittest.TestCase):
 	def test(self):

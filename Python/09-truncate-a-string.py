@@ -6,12 +6,7 @@ import unittest
 # If the num is less than or equal to 3, then the length of the three dots is not added to the string length.
 
 def truncate(string, num):
-	if len(string) <= num:
-		return string
-	elif num > 3:
-		return "{}...".format(string[:num - 3])
-	else:
-		return "{}...".format(string[:num])
+	pass
 
 class truncateTest(unittest.TestCase):
 	def test(self):

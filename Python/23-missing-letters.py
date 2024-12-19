@@ -5,7 +5,7 @@ import unittest
 # If all letters are present in the range, return undefined.
 
 def fearNotLetter(string):
-	return string
+	pass
 
 class fearNotLetterTest(unittest.TestCase):
 	def test(self):

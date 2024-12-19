@@ -6,7 +6,7 @@ import unittest
 # Likewise, where([20,3,5], 19) should return 2 because once the list has been sorted it will look like [3,5,20] and 19 is less than 20 (index 2) and greater than 5 (index 1).
 
 def where(lis, num):
-	return num
+	pass
 
 class whereTest(unittest.TestCase):
 	def test(self):
